@@ -47,7 +47,7 @@ in restricted (faac, faad2).
 %prep
 %setup -q
 %if !%{build_plf}
-%patch0 -p1 -b .plf
+%patch1 -p1 -b .plf
 %endif
 
 %install
