@@ -16,7 +16,7 @@ Release:	1%{?extrarelsuffix}
 License:	GPLv2
 Group:		Sound
 URL:		http://www.kde-apps.org/content/show.php?content=12608
-Source0:	http://www.kde-apps.org/CONTENT/content-files/12608-%{name}-%{version}.tar.bz2
+Source0:	http://www.kde-apps.org/CONTENT/content-files/%{name}-%{version}.tar.bz2
 Patch0:		audiokonverter-noflac.patch
 BuildRequires:	kde4-macros
 Requires:	dolphin
