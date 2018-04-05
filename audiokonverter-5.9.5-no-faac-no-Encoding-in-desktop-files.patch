@@ -1,0 +1,168 @@
+diff -rupN audiokonverter-5.9.5.old/audioconvert4.desktop audiokonverter-5.9.5/audioconvert4.desktop
+--- audiokonverter-5.9.5.old/audioconvert4.desktop	2009-11-28 20:29:18.000000000 +0100
++++ audiokonverter-5.9.5/audioconvert4.desktop	2017-10-09 15:41:51.198078720 +0200
+@@ -51,7 +51,7 @@ X-KDE-Submenu[uk]=Перетворити
+ X-KDE-Submenu[x-test]=xxConvert Toxx
+ X-KDE-Submenu[zh_CN]=转换为
+ X-KDE-Submenu[zh_TW]=轉換為
+-Encoding=UTF8
++
+ 
+ 
+ [Desktop Action mp3]
+@@ -74,15 +74,15 @@ Exec=konsole -e audioconvert4 -t f %F
+ #Icon=audio-basic
+ #Exec=konsole -e audioconvert4 -t a %F
+ 
+-[Desktop Action ipod]
+-Name=M4A for iPod (AAC)
+-Name[de]=M4A für iPod (AAC)
+-Name[nl]=M4A voor iPod (AAC)
+-Name[fr]=M4A pour iPod (AAC)
+-Name[it]=M4A per iPod (AAC)
+-Name[es]=M4A para iPod (AAC)
+-Icon=audio-basic
+-Exec=konsole -e audioconvert4 -t i %F
++#[Desktop Action ipod]
++#Name=M4A for iPod (AAC)
++#Name[de]=M4A für iPod (AAC)
++#Name[nl]=M4A voor iPod (AAC)
++#Name[fr]=M4A pour iPod (AAC)
++#Name[it]=M4A per iPod (AAC)
++#Name[es]=M4A para iPod (AAC)
++#Icon=audio-basic
++#Exec=konsole -e audioconvert4 -t i %F
+ 
+ [Desktop Action wav]
+ Name=WAV
+diff -rupN audiokonverter-5.9.5.old/audioconvert.desktop audiokonverter-5.9.5/audioconvert.desktop
+--- audiokonverter-5.9.5.old/audioconvert.desktop	2015-01-25 16:19:52.000000000 +0100
++++ audiokonverter-5.9.5/audioconvert.desktop	2017-10-09 15:40:30.890543271 +0200
+@@ -37,15 +37,15 @@ Exec=konsole -e audioconvert -t f %F
+ #Icon=sound
+ #Exec=konsole -e audioconvert -t a %F
+ 
+-[Desktop Action ipod]
+-Name=M4A for iPod (AAC)
+-Name[de]=M4A für iPod (AAC)
+-Name[nl]=M4A voor iPod (AAC)
+-Name[fr]=M4A pour iPod (AAC)
+-Name[it]=M4A per iPod (AAC)
+-Name[es]=M4A para iPod (AAC)
+-Icon=sound
+-Exec=konsole -e audioconvert -t i %F
++#[Desktop Action ipod]
++#Name=M4A for iPod (AAC)
++#Name[de]=M4A für iPod (AAC)
++#Name[nl]=M4A voor iPod (AAC)
++#Name[fr]=M4A pour iPod (AAC)
++#Name[it]=M4A per iPod (AAC)
++#Name[es]=M4A para iPod (AAC)
++#Icon=sound
++#Exec=konsole -e audioconvert -t i %F
+ 
+ [Desktop Action wav]
+ Name=WAV
+diff -rupN audiokonverter-5.9.5.old/audiofrommovie4.desktop audiokonverter-5.9.5/audiofrommovie4.desktop
+--- audiokonverter-5.9.5.old/audiofrommovie4.desktop	2016-01-10 14:20:11.000000000 +0100
++++ audiokonverter-5.9.5/audiofrommovie4.desktop	2017-10-09 15:42:20.449180485 +0200
+@@ -7,7 +7,6 @@ X-KDE-Submenu=extract audio to
+ X-KDE-Submenu[de]=Tonspur umwandeln in
+ X-KDE-Submenu[fr]=Extraire la piste audio au format...
+ X-KDE-Submenu[es]=Extraer pista de audio en...
+-Encoding=UTF8
+ 
+ [Desktop Action show]
+ Name=show properties only
+@@ -41,15 +40,15 @@ Exec=konsole -e movie2sound4 -t f %F
+ #Icon=sound
+ #Exec=konsole -e movie2sound4 -t a %F
+ 
+-[Desktop Action ipod]
+-Name=M4A for iPod (AAC)
+-Name[de]=M4A für iPod (AAC)
+-Name[nl]=M4A voor iPod (AAC)
+-Name[fr]=M4A pour iPod (AAC)
+-Name[it]=M4A per iPod (AAC)
+-Name[es]=M4A para iPod (AAC)
+-Icon=sound
+-Exec=konsole -e movie2sound4 -t i %F
++#[Desktop Action ipod]
++#Name=M4A for iPod (AAC)
++#Name[de]=M4A für iPod (AAC)
++#Name[nl]=M4A voor iPod (AAC)
++#Name[fr]=M4A pour iPod (AAC)
++#Name[it]=M4A per iPod (AAC)
++#Name[es]=M4A para iPod (AAC)
++#Icon=sound
++#Exec=konsole -e movie2sound4 -t i %F
+ 
+ [Desktop Action wav]
+ Name=WAV
+diff -rupN audiokonverter-5.9.5.old/audiofrommovie.desktop audiokonverter-5.9.5/audiofrommovie.desktop
+--- audiokonverter-5.9.5.old/audiofrommovie.desktop	2016-01-10 14:19:53.000000000 +0100
++++ audiokonverter-5.9.5/audiofrommovie.desktop	2017-10-09 15:41:01.629600198 +0200
+@@ -10,7 +10,6 @@ X-TDE-Submenu=extract audio to
+ X-TDE-Submenu[de]=Tonspur umwandeln in
+ X-TDE-Submenu[fr]=Extraire la piste audio au format...
+ X-TDE-Submenu[es]=Extraer pista de audio en...
+-Encoding=UTF8
+ 
+ [Desktop Action show]
+ Name=show properties only
+@@ -44,15 +43,15 @@ Exec=konsole -e movie2sound -t f %F
+ #Icon=sound
+ #Exec=konsole -e movie2sound -t a %F
+ 
+-[Desktop Action ipod]
+-Name=M4A for iPod (AAC)
+-Name[de]=M4A für iPod (AAC)
+-Name[nl]=M4A voor iPod (AAC)
+-Name[fr]=M4A pour iPod (AAC)
+-Name[it]=M4A per iPod (AAC)
+-Name[es]=M4A para iPod (AAC)
+-Icon=sound
+-Exec=konsole -e movie2sound -t i %F
++#[Desktop Action ipod]
++#Name=M4A for iPod (AAC)
++#Name[de]=M4A für iPod (AAC)
++#Name[nl]=M4A voor iPod (AAC)
++#Name[fr]=M4A pour iPod (AAC)
++#Name[it]=M4A per iPod (AAC)
++#Name[es]=M4A para iPod (AAC)
++#Icon=sound
++#Exec=konsole -e movie2sound -t i %F
+ 
+ [Desktop Action wav]
+ Name=WAV
+diff -rupN audiokonverter-5.9.5.old/Oggdrop-Lx.desktop audiokonverter-5.9.5/Oggdrop-Lx.desktop
+--- audiokonverter-5.9.5.old/Oggdrop-Lx.desktop	2007-12-11 19:37:20.000000000 +0100
++++ audiokonverter-5.9.5/Oggdrop-Lx.desktop	2017-10-09 15:43:42.374663360 +0200
+@@ -2,7 +2,6 @@
+ Comment=
+ Comment[de]=
+ Comment[fr]=
+-Encoding=UTF-8
+ Exec=/usr/bin/oggdrop-lx %F
+ GenericName=
+ GenericName[de]=
+diff -rupN audiokonverter-5.9.5.old/x-flv.desktop audiokonverter-5.9.5/x-flv.desktop
+--- audiokonverter-5.9.5.old/x-flv.desktop	2007-12-11 19:37:20.000000000 +0100
++++ audiokonverter-5.9.5/x-flv.desktop	2017-10-09 15:41:25.701861419 +0200
+@@ -1,7 +1,6 @@
+ [Desktop Entry]
+ Comment=Flash Video
+ Comment[es]=Video Flash
+-Encoding=UTF-8
+ Icon=video
+ MimeType=video/x-flv
+ Patterns=*.flv;*.FLV;
+diff -rupN audiokonverter-5.9.5.old/x-wavpack.desktop audiokonverter-5.9.5/x-wavpack.desktop
+--- audiokonverter-5.9.5.old/x-wavpack.desktop	2007-12-11 19:37:20.000000000 +0100
++++ audiokonverter-5.9.5/x-wavpack.desktop	2017-10-09 15:41:14.521204580 +0200
+@@ -1,5 +1,4 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Type=MimeType
+ MimeType=audio/x-wavpack
+ Icon=sound
