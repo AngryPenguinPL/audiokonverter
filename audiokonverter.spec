@@ -17,7 +17,7 @@ License:	GPLv2
 Group:		Sound
 URL:		http://www.kde-apps.org/content/show.php?content=12608
 Source0:	http://www.kde-apps.org/CONTENT/content-files/%{name}-%{version}.tar.bz2
-Patch0:		audiokonverter-noflac.patch
+#Patch0:		audiokonverter-noflac.patch
 BuildRequires:	kde4-macros
 Requires:	dolphin
 Requires:	mplayer
@@ -45,7 +45,7 @@ in restricted (lame, faac, faad2).
 %prep
 %setup -q
 %if !%{build_plf}
-%patch0 -p0 -b .plf
+#patch0 -p0 -b .plf
 %endif
 
 %install
