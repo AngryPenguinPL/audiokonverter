@@ -12,12 +12,13 @@
 Summary:	An audio converter
 Name:		audiokonverter
 Version:	5.9.5
-Release:	1%{?extrarelsuffix}
+Release:	2%{?extrarelsuffix}
 License:	GPLv2
 Group:		Sound
-URL:		http://www.kde-apps.org/content/show.php?content=12608
+URL:		https://www.linux-apps.com/content/show.php?content=12608
 Source0:	http://www.kde-apps.org/CONTENT/content-files/%{name}-%{version}.tar.bz2
 #Patch0:		audiokonverter-noflac.patch
+Patch1:   %{name}-5.9.5-no-faac-no-Encoding-in-desktop-files.patch
 BuildRequires:	kde4-macros
 Requires:	dolphin
 Requires:	mplayer
@@ -25,8 +26,9 @@ Requires:	flac
 Requires:	wavpack
 Requires:	id3lib
 Requires:	vorbis-tools
-%if %{build_plf}
+# mp3 patent expired in April 2017, we can use lame without limitations http://www.mp3licensing.com/patents/index.html
 Requires:	lame
+%if %{build_plf}
 Requires:	faac
 Requires:	faad2
 %endif
@@ -39,13 +41,13 @@ MP3, OGG, M4A, WAV and FLAC in Konqueror by right-clicking on them.
 
 %if %{build_plf}
 This package is in restricted because it requires packages that are
-in restricted (lame, faac, faad2).
+in restricted (faac, faad2).
 %endif
 
 %prep
 %setup -q
 %if !%{build_plf}
-#patch0 -p0 -b .plf
+%patch0 -p1 -b .plf
 %endif
 
 %install
