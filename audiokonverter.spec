@@ -11,8 +11,8 @@
 
 Summary:	An audio converter
 Name:		audiokonverter
-Version:	5.9.1
-Release:	5%{?extrarelsuffix}
+Version:	5.9.5
+Release:	1%{?extrarelsuffix}
 License:	GPLv2
 Group:		Sound
 URL:		http://www.kde-apps.org/content/show.php?content=12608
